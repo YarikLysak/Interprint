@@ -1,0 +1,34 @@
+{
+  "1": {
+    "image": "./img/gallery-item-colored.png",
+    "content": "Візитівки"
+  },
+  "2": {
+    "image": "./img/gallery-item-colored.png",
+    "content": "Флаєри"
+  },
+  "3": {
+    "image": "./img/gallery-item-colored.png",
+    "content": "Буклети"
+  },
+  "4": {
+    "image": "./img/gallery-item-colored.png",
+    "content": "Наклейки"
+  },
+  "5": {
+    "image": "./img/gallery-item-colored.png",
+    "content": "Брошюри"
+  },
+  "6": {
+    "image": "./img/gallery-item-colored.png",
+    "content": "Книги"
+  },
+  "7": {
+    "image": "./img/gallery-item-colored.png",
+    "content": "Різне"
+  },
+  "8": {
+    "image": "./img/gallery-item-colored.png",
+    "content": ""
+  }
+}
