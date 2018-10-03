@@ -1,21 +1,14 @@
-import axios from 'axios';
+import galleryItems from '../gallery-items';
 
 (function() {
   function installGallery() {
-    getData();
-  }
-
-  function getData() {
-    return axios.get('../gallery-items.json').then(response => {
-      insertItems(response.data);
-    });
+    insertItems();
   }
 
   function insertItems(galleryResponse) {
     let galleryContent = `<div class="close__wrapper">
                             <div class="close" id="close"></div>
                           </div>`;
-    const galleryItems = Object.values(galleryResponse);
 
     galleryItems.forEach(galleryItem => {
       galleryContent += createGalleryItem(galleryItem);

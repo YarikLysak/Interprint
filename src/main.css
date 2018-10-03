@@ -28,24 +28,27 @@ body {
   width: 100%;
   background: url('../img/regtangles.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 .header {
-  height: 200px;
+  height: 250px;
   padding: 40px 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .logo-wrapper {
-  max-width: 30%;
+  height: 100%;
 }
 .logo {
   height: 100%;
 }
 .header__text {
   font-size: 1.5em;
+  font-style: normal;
+  margin-bottom: 5px;
 }
 .header__text__list {
   margin: 0;
@@ -67,7 +70,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 50px 30px;
+  margin: 50px 30px 0;
   padding: 0 100px;
 }
 .main__gallery__item {
@@ -119,6 +122,7 @@ body {
 }
 .text--blue {
   color: #1a76bc;
+  font-weight: bold;
 }
 .text--orange {
   color: #f7901e;
