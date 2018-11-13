@@ -1,35 +1,35 @@
 const galleryItems = [
   {
-    image: './img/gallery-item-colored.png',
+    image: './img/visitki.jpg',
     content: 'Візитівки',
   },
   {
-    image: './img/gallery-item-colored.png',
+    image: './img/flaery.jpg',
     content: 'Флаєри',
   },
   {
-    image: './img/gallery-item-colored.png',
+    image: './img/bucklety.jpg',
     content: 'Буклети',
   },
   {
-    image: './img/gallery-item-colored.png',
+    image: './img/nakleiki.jpg',
     content: 'Наклейки',
   },
   {
-    image: './img/gallery-item-colored.png',
+    image: './img/broshury.png',
     content: 'Брошюри',
   },
   {
-    image: './img/gallery-item-colored.png',
+    image: './img/knigi.jpg',
     content: 'Книги',
+  },
+  {
+    image: './img/calendari.jpg',
+    content: 'Календарі',
   },
   {
     image: './img/gallery-item-colored.png',
     content: 'Різне',
-  },
-  {
-    image: './img/gallery-item-colored.png',
-    content: '',
   },
 ];
 export default galleryItems;

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./src/main.css">
+    <link rel="shortcut icon" href="img/logo1.png" />
     <title>Interprint Service</title>
 </head>
 
@@ -16,21 +19,80 @@
             <div class="rectangles">
                 <header class="header">
                     <div class="logo-wrapper">
-                        <img src="/img/logo.png" alt="logo" class="logo">
+                        <span class="logo__image__wrapper">
+                            <img src="/img/logo1.png" alt="logo" class="logo">
+                        </span>
+                        <span class="logo__text__wrapper">INTERPRINT SERVICE</span>
                     </div>
-                    <div>
-                        <ul class="header__text__list">
-                            <li class="header__text text--blue">Якісні поліграфічні послуги!</li>
-                            <li class="header__text text--orange">Оперативний друк</li>
-                            <li class="header__text text--orange">Дизайн поліграфії</li>
-                            <li class="header__text text--orange">Індивідуальний підхід</li>
+                    <div class="header__nav">
+                        <ul class="header__nav__items">
+                            <li class="header__nav__item"><a href="#about" class="blue__hover">Про нас</a></li>
+                            <li class="header__nav__item"><a href="#gallery" class="blue__hover">Наші роботи</a></li>
+                            <li class="header__nav__item"><a href="#contacts" class="blue__hover">Контакти</a></li>
                         </ul>
                     </div>
                 </header>
                 <main>
-                    <h2 class="main__header text--orange" id="showGallery">Наші роботи <i class="arrow down"></i></h2>
-                    <section class="main__gallery" id="galleryWrapper"></section>
+                    <section class="about" id="about">
+                        <div class="about-wrapper ">
+                            <div class="logo__image__wrapper main__logo__wrapper">
+                                <img src="/img/logo.png" alt="logo" class="logo">
+                            </div>
+                            <h1 class="main__about__head">Якісні поліграфічні послуги</h1>
+                            <ul class="main__about__list">
+                                <li class="main__about__list__text">Оперативний друк</li>
+                                <li class="main__about__list__text">Дизайн поліграфії</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="gallery" id="gallery">
+                        <h2 class="section__name text--orange" id="showGallery">Наші роботи <i class="arrow down"></i></h2>
+                        <section class="gallery__items" id="galleryWrapper"></section>
+                    </section>
+
+                    <section class="contacts" id="contacts">
+                        <h2 class="section__name text--orange">Контакти</h2>
+                        <div class="contacts__wrapper">
+                            <div class="map__wrapper">
+                                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.586099383464!2d30.38754704594528!3d50.442932344239786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdf64d25a203%3A0xeef21b47addf3d22!2sInterprint+Service!5e0!3m2!1sen!2sua!4v1539001889815"
+                                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                            <div class="address__wrapper">
+                                <span class="address">
+                                    <p>м.Київ, 02000,</p>
+                                    <p>Святошинський район,</p>
+                                    <p>вул. Жмеринська, 5, оф.18</p>
+                                    <p>info.ips24@gmail.com</p>
+                                </span>
+                                <span class="phone">
+                                    <p>(063) 994 97 55,</p>
+                                    <p>(093) 851 08 08</p>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+
                 </main>
+
+                <footer class="header">
+                    <div class="footer__logo">
+                        <a href="#about">
+                            <span class="logo__image__wrapper">
+                                <img src="/img/logo1.png" alt="logo" class="logo">
+                            </span>
+                            <span class="logo__text__wrapper">INTERPRINT SERVICE</span>
+                        </a>
+                    </div>
+                    <div class="footer__nav">
+                        <ul class="footer__nav__items">
+                            <li class="footer__nav__item"><a href="#about" class="blue__hover"> Про нас</a></li>
+                            <li class="footer__nav__item"><a href="#gallery" class="blue__hover"> Наші роботи</a></li>
+                            <li class="footer__nav__item"><a href="#contacts" class="blue__hover"> Контакти</a></li>
+                        </ul>
+                    </div>
+                </footer>
+
             </div>
         </section>
     </section>

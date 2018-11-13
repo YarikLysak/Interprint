@@ -6,9 +6,7 @@ import galleryItems from '../gallery-items';
   }
 
   function insertItems(galleryResponse) {
-    let galleryContent = `<div class="close__wrapper">
-                            <div class="close" id="close"></div>
-                          </div>`;
+    let galleryContent = ``;
 
     galleryItems.forEach(galleryItem => {
       galleryContent += createGalleryItem(galleryItem);
@@ -18,11 +16,10 @@ import galleryItems from '../gallery-items';
 
   function createGalleryItem(item) {
     return `<div class="main__gallery__item">
-                <div class="main__gallery__item__image__wrapper">
+                <div 
+                  class="main__gallery__item__image" 
+                  style="background-image:url('${item.image}')">
                     <div class="grey"></div>
-                    <img src="${
-                      item.image
-                    }" alt="" class="main__gallery__item__image">
                 </div>
                 <p class="main__gallery__item__text">${item.content}</p>
             </div>`;
@@ -30,22 +27,6 @@ import galleryItems from '../gallery-items';
 
   function outputGallerryContent(galleryContent) {
     document.getElementById('galleryWrapper').innerHTML = galleryContent;
-    addEventOnCollapsedGalleryButton();
-  }
-
-  function addEventOnCollapsedGalleryButton() {
-    const showGalleryButton = document.getElementById('showGallery');
-    const gallery = document.getElementById('galleryWrapper');
-    const closeGalleryButton = document.getElementById('close');
-
-    showGalleryButton.addEventListener('click', () => {
-      gallery.classList.add('vissible');
-      closeGalleryButton.classList.add('vissible');
-    });
-    closeGalleryButton.addEventListener('click', () => {
-      gallery.classList.remove('vissible');
-      closeGalleryButton.classList.remove('vissible');
-    });
   }
 
   installGallery();
